@@ -6,7 +6,7 @@ plugins:
     version: latest
     
   # Git support
-  - name: octref.vetur
+  - id: octref.vetur
     version: latest
   - id: eamodio.gitlens
     version: latest
