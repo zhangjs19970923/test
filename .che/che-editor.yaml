@@ -1,1 +1,7 @@
 id: eclipse/che-theia/latest
+components:
+  - name: cheEditor
+    properties:
+      editorPreferences:
+        theme: vs-light
+        fontSize: 14px
