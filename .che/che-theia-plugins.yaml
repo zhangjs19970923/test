@@ -1,2 +1,30 @@
-- id: redhat/java
-- id: redhat.vscode-yaml
+plugins:
+  # Language features
+  - name: typescript-language-features
+    version: latest
+  - name: python
+    version: latest
+
+  # Git support
+  - name: git
+    version: latest
+  - name: gitlens
+    version: latest
+
+  # Formatting and linting
+  - name: prettier-vscode
+    version: latest
+  - name: eslint
+    version: latest
+
+  # Debugging
+  - name: java-debug
+    version: latest
+
+  # Editor enhancements
+  - name: emmet
+    version: latest
+  - name: vscode-keymap
+    version: latest
+  - name: indent-rainbow
+    version: latest
