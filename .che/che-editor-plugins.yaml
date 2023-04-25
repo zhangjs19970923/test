@@ -1,30 +1,6 @@
 plugins:
-  # Language features
-  - name: typescript-language-features
-    version: latest
-  - name: python
-    version: latest
-    
   # Git support
   - id: octref.vetur
     version: latest
   - id: eamodio.gitlens
-    version: latest
-
-  # Formatting and linting
-  - name: prettier-vscode
-    version: latest
-  - name: eslint
-    version: latest
-
-  # Debugging
-  - name: java-debug
-    version: latest
-
-  # Editor enhancements
-  - name: emmet
-    version: latest
-  - name: vscode-keymap
-    version: latest
-  - name: indent-rainbow
     version: latest
