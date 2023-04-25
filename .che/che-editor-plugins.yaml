@@ -4,11 +4,11 @@ plugins:
     version: latest
   - name: python
     version: latest
-
+    
   # Git support
-  - name: git
+  - name: octref.vetur
     version: latest
-  - name: gitlens
+  - id: eamodio.gitlens
     version: latest
 
   # Formatting and linting
