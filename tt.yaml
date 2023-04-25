@@ -1,0 +1,40 @@
+schemaVersion: 2.1.0
+metadata:
+  name: win11react-shud
+  namespace: admin-che
+attributes:
+  controller.devfile.io/devworkspace-config:
+    name: devworkspace-config
+    namespace: eclipse-che
+  controller.devfile.io/storage-type: per-workspace
+components:
+  - container:
+      args:
+        - tail
+        - '-f'
+        - /dev/null
+      endpoints:
+        - exposure: public
+          name: livereload
+          protocol: http
+          targetPort: 35729
+        - attributes:
+            path: /
+          exposure: public
+          name: preview-server
+          protocol: http
+          targetPort: 4000
+      image: quay.io/eclipse/che-docs:next
+      memoryLimit: 2Gi
+      memoryRequest: 256Mi
+      sourceMapping: /projects
+    name: tools
+commands:
+  - exec:
+      commandLine: sh tools/preview.sh
+      component: tools
+      group:
+        isDefault: true
+        kind: build
+      workingDir: ${PROJECT_SOURCE}
+    id: start-preview-server
