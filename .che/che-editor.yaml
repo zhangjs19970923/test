@@ -1,4 +1,5 @@
-id: che-incubator/che-code/latest
+# id: che-incubator/che-code/latest
+id: eclipse/che-theia/latest
 
 components:
   - name: cheEditor
