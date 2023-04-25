@@ -1,6 +1,6 @@
 plugins:
   # Git support
-  - id: octref.vetur
+  - id: redhat.vscode-yaml
     version: latest
-  - id: eamodio.gitlens
+  - id: octref.vetur
     version: latest
