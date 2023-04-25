@@ -2,5 +2,5 @@ plugins:
   # Git support
   - id: redhat.vscode-yaml
     version: latest
-  - id: octref.vetur
-    version: latest
+  # - id: octref.vetur
+  #   version: latest
